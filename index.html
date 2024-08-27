@@ -22,19 +22,20 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#ABEF5F',
-                'green-primary': '#ABEF5F',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#ABEF5F',
+                        'green-primary': '#ABEF5F',
+                        'green-secondary': 'rgba(171, 239, 95, 0.50)',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
-<body class="font-manrope bg-slate-50">
+<body class="font-manrope">
     <header class="md:container mx-auto mt-2">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -57,7 +58,7 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li ><a class="font-bold">Home</a></li>
+                    <li><a class="font-bold">Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Portfolio</a></li>
                     <li><a>Blogs</a></li>
@@ -65,11 +66,32 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <i class="fa-solid fa-magnifying-glass bg-white rounded-full items-center cursor-pointer p-4 ml-4 mr-4 shadow-md"></i>
-                <i class="fa-solid fa-cart-shopping bg-white rounded-full items-center p-4 cursor-pointer mr-4 shadow-md"></i>
-                <a class="btn bg-green-primary text-black font-extrabold">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-slate-50 text-center items-center rounded-full p-1"></i></a>
+                <i
+                    class="fa-solid fa-magnifying-glass bg-white rounded-full items-center cursor-pointer p-4 ml-4 mr-4 shadow-md text-slate-500"></i>
+                <i
+                    class="fa-solid fa-cart-shopping bg-white rounded-full text-slate-500 items-center p-4 cursor-pointer mr-4 shadow-md"></i>
+                <a class="btn bg-green-primary text-black font-extrabold">Book Consult<i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-black text-slate-50 text-center items-center rounded-full p-1"></i></a>
             </div>
         </div>
+<!-- hero-content -->
+        <section>
+            <div class="hero">
+                <div class="hero-content text-center">
+                    <div>
+                        <div>
+                            <img src="./assets/banner.png" class="space-y-4 mx-auto" alt="">
+                        </div>
+                        <h1 class="text-6xl font-bold">A barn house of this design has a<br> striking appearance</h1>
+                        <p class="py-6 text-xs">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br> accents, and large windows that flood the space with natural light.
+                        </p>
+                        <button class="btn bg-green-secondary font-extrabold">View Details <i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-green-primary text-black text-center items-center rounded-full p-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
